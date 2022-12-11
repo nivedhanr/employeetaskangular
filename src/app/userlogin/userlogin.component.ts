@@ -8,17 +8,17 @@ import { ApiService } from '../api.service';
   styleUrls: ['./userlogin.component.css']
 })
 export class UserloginComponent {
-  empcode=""
+  email=""
   password=""
   constructor(private api:ApiService,private route:Router){}
  
   readValues=()=>
   {
-    let data:any={"email":this.empcode,"password":this.password}
+    let data:any={"email":this.email,"password":this.password}
     console.log(data)
     this.api.userLogin(data).subscribe(
       (response:any)=>{
-        this.empcode=""
+        this.email=""
         this.password=""
         if (response.length==0) {
           
