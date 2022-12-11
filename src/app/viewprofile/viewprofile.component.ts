@@ -7,10 +7,10 @@ import { ApiService } from '../api.service';
   styleUrls: ['./viewprofile.component.css']
 })
 export class ViewprofileComponent {
-  userId:any=""
+  empcode:any=""
   constructor(private api:ApiService){
-    this.userId=localStorage.getItem("userinfo")
-    let data:any={"id":this.userId}
+    this.empcode=localStorage.getItem("userinfo")
+    let data:any={"id":this.empcode}
     this.api.getProfileDetails(data).subscribe(
       (response:any)=>{
         console.log(response)

@@ -10,11 +10,35 @@ import { FormsModule } from '@angular/forms';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { UserregComponent } from './userreg/userreg.component';
 import { ViewprofileComponent } from './viewprofile/viewprofile.component';
+import { AdminnavComponent } from './adminnav/adminnav.component';
+import { UsernavComponent } from './usernav/usernav.component';
+import { AddtaskComponent } from './addtask/addtask.component';
 const myRoute:Routes=[
   {
     path:"",
     component:AdminloginComponent
+  },
+  {
+    path:"userlogin",
+    component:UserloginComponent
+  },
+  {
+    path:"userreg",
+    component:UserregComponent
+  },
+  {
+    path:"adminnav",
+    component:AdminnavComponent
+  },
+  {
+    path:"usernav",
+    component:UsernavComponent
+  },
+  {
+    path:"addtask",
+    component:AddtaskComponent
   }
+
 ]
 @NgModule({
   declarations: [
@@ -22,7 +46,10 @@ const myRoute:Routes=[
     AdminloginComponent,
     UserloginComponent,
     UserregComponent,
-    ViewprofileComponent
+    ViewprofileComponent,
+    AdminnavComponent,
+    UsernavComponent,
+    AddtaskComponent
   ],
   imports: [
     BrowserModule,

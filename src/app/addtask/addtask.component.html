@@ -1,0 +1,17 @@
+<app-adminnav></app-adminnav>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 g-3 mt-4">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 g-3 mt-4">
+            <label for="" class="form-label"><h5>Employee Code :</h5></label>
+            <input name="empcode" [(ngModel)]="empcode" type="text" class="form-control">
+        </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 g-3 mt-4"></div>
+            <label for="" class="form-label"><h5>Task :</h5></label>
+            <textarea name="task" [(ngModel)]="task" id="" cols="30" rows="10" class="form-control"></textarea>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 g-3 mt-4">
+            <button (click)="readValue()" class="btn btn-danger">ADD</button>
+        </div>
+        </div>
+    </div>
+</div>
